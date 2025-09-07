@@ -21,20 +21,22 @@ Note: [Gin Quickstart](https://github.com/go-advanced-admin/docs/pull/21) Gin do
 ## Quick Start
 
 ```go
+package main
+
 import (
-    "github.com/ovnicraft/admin"
-    "github.com/ovnicraft/go-advanced-admin-gin"
-    "github.com/gin-gonic/gi"
+    admin "github.com/ovnicraft/go-advanced-admin"
+    admingin "github.com/ovnicraft/go-advanced-admin-gin"
+    "github.com/gin-gonic/gin"
 )
 
 func main() {
-    // Initialize Echo
-    e := echo.New()
+    r := gin.New()
+    web := admingin.NewIntegrator(r.Group("/admin"))
 
-    // Initialize the web integrator
-    webIntegrator := adminecho.NewIntegrator(e.Group("/admin"))
+    // Initialize the admin panel with your ORM and permissions
+    panel := admin.NewPanel(/* orm */ nil, web, /* perms */ nil, admin.DefaultConfig)
 
-    // Use webIntegrator when initializing the admin panel
+    _ = panel // configure apps/models and start your server
 }
 ```
 

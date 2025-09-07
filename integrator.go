@@ -1,14 +1,14 @@
 package admingin
 
 import (
-	"fmt"
-	"mime"
-	"net/http"
-	"path/filepath"
-	"slices"
+    "fmt"
+    "mime"
+    "net/http"
+    "path/filepath"
+    "slices"
 
-	"github.com/gin-gonic/gin"
-	"github.com/go-advanced-admin/admin"
+    "github.com/gin-gonic/gin"
+    admin "github.com/ovnicraft/go-advanced-admin"
 )
 
 // Integrator adapts the admin panel to a gin.RouterGroup.

@@ -4,7 +4,7 @@ go 1.24.4
 
 require (
 	github.com/gin-gonic/gin v1.10.1
-	github.com/ovnicraft/go-advanced-admin v1.0.0
+	github.com/ovnicraft/go-advanced-admin v1.0.3
 )
 
 require (
@@ -36,5 +36,3 @@ require (
 	google.golang.org/protobuf v1.34.1 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/go-advanced-admin/admin => ..
