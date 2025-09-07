@@ -1,10 +1,10 @@
-module github.com/go-advanced-admin/admin/admingin
+module github.com/ovnicraft/go-advanced-admin-gin
 
 go 1.24.4
 
 require (
 	github.com/gin-gonic/gin v1.10.1
-	github.com/go-advanced-admin/admin v0.1.2
+	github.com/ovnicraft/go-advanced-admin v1.0.0
 )
 
 require (
